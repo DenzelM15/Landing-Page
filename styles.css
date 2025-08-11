@@ -1,0 +1,88 @@
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .background {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .btn {
+  padding: 12px 24px;
+  background-color: #4b0082; /* darker purple */
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(75, 0, 130, 0.5); /* subtle shading */
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #3a006b; /* even darker purple */
+  box-shadow: 0 6px 12px rgba(58, 0, 107, 0.7); /* stronger shadow on hover */
+}
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      z-index: 3;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+  color: #4b0082; /* darker purple */
+}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
